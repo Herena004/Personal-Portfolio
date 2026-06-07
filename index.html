@@ -2,524 +2,537 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Herena Konecia - Web Developer & SEO Analyst</title>
-  <!-- "H" with a subtle bottom accent line -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a0a0a'/><text x='50' y='68' font-family='system-ui, -apple-system, sans-serif' font-size='58' font-weight='700' fill='%23f5f5f5' text-anchor='middle'>H</text><rect x='30' y='78' width='40' height='4' rx='2' fill='%23fff' opacity='0.3'/></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Herena Konecia – SEO Analyst & Frontend Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
+<!-- ============ NAV ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">HK<span class="accent">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#casestudies">Cases</a></li>
+    <li><a href="#toolkit">Tools</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-logo">HK<span class="dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#contact" class="nav-link cta-link">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#about" class="mob-link">About</a></li>
-      <li><a href="#skills" class="mob-link">Skills</a></li>
-      <li><a href="#experience" class="mob-link">Experience</a></li>
-      <li><a href="#projects" class="mob-link">Projects</a></li>
-      <li><a href="#education" class="mob-link">Education</a></li>
-      <li><a href="#contact" class="mob-link">Contact</a></li>
-    </ul>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <div class="hero-photo-initials">HK</div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Herena Konecia</h1>
+      <h2 class="hero-role">
+        <span class="typed-prefix">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="typed-cursor">|</span>
+      </h2>
+      <p class="hero-intro">SEO Analyst & Frontend Developer crafting search-optimized digital experiences. Based in Tirupur, Tamil Nadu.</p>
+      <div class="hero-buttons">
+        <a href="https://drive.google.com/uc?export=download&id=1AoduyVZtntQClsoYFDEYMlivkoyjkbDp" class="btn btn-primary" id="downloadResume"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#projects" class="btn btn-outline"><i class="fas fa-folder-open"></i> View Projects</a>
+      </div>
+    </div>
   </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-bg-text">PORTFOLIO</div>
-    <div class="hero-content">
-      <div class="hero-tag reveal-up" data-delay="0">
-        <span class="tag-dot"></span> Available for opportunities
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-label">01 / About</div>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-cards">
+      <div class="about-card reveal">
+        <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>BE CSE Graduate</h3>
+        <p>B.E. Computer Science & Engineering from Angel College of Engineering & Technology. CGPA: 7.53/10, Graduated 2026.</p>
       </div>
-      <h1 class="hero-name reveal-up" data-delay="100">
-        Herena<br /><em>Konecia</em>
-      </h1>
-      <div class="hero-title reveal-up" data-delay="200">
-        <span class="role">Web Developer</span>
-        <span class="separator">×</span>
-        <span class="role">SEO Analyst</span>
+      <div class="about-card reveal">
+        <div class="about-card-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>9 Months SEO Experience</h3>
+        <p>Professional experience at QuantumQLabs as Intern and Junior SEO Analyst, optimizing travel and corporate websites.</p>
       </div>
-      <p class="hero-desc reveal-up" data-delay="300">
-        B.E. Computer Science graduate crafting responsive web experiences and driving organic growth through data-driven SEO strategies.
-      </p>
-      <div class="hero-actions reveal-up" data-delay="400">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      <div class="about-card reveal">
+        <div class="about-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Open to Relocate</h3>
+        <p>Currently based in Tirupur, Tamil Nadu. Actively open to relocation — especially Coimbatore and beyond.</p>
       </div>
-      <div class="hero-links reveal-up" data-delay="500">
-        <a href="https://in.linkedin.com/in/herena-konecia-1a4aa3331" target="_blank" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
+      <div class="about-card reveal">
+        <div class="about-card-icon"><i class="fas fa-code"></i></div>
+        <h3>Frontend Developer</h3>
+        <p>Skilled in HTML5, CSS3, JavaScript (ES6+), Builds responsive, accessible interfaces.</p>
+      </div>
+    </div>
+
+    <div class="counters">
+      <div class="counter-item reveal">
+        <div class="counter-num" data-target="9">0</div>
+        <div class="counter-label">Months Experience</div>
+      </div>
+      <div class="counter-item reveal">
+        <div class="counter-num" data-target="4">0</div>
+        <div class="counter-label">Projects Built</div>
+      </div>
+      <div class="counter-item reveal">
+        <div class="counter-num" data-target="3">0</div>
+        <div class="counter-label">Certifications</div>
+      </div>
+      <div class="counter-item reveal">
+        <div class="counter-num" data-target="2">0</div>
+        <div class="counter-label">Languages</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEO SKILLS DASHBOARD ============ -->
+<section class="section section-dark" id="skills">
+  <div class="container">
+    <div class="section-label">02 / Skills</div>
+    <h2 class="section-title">SEO Skills Dashboard</h2>
+    <div class="skills-grid">
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">Keyword Research</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">On-Page SEO</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">Technical SEO</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">Google Analytics</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">Search Console</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar-wrap reveal">
+        <div class="skill-bar-header">
+          <span class="skill-name">Backlink Analysis</span>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+    </div>
+
+    <div class="tech-tags">
+      <h3 class="tech-tags-title">Other Technical Skills</h3>
+      <div class="tags-wrap">
+        <span class="tag">HTML5</span><span class="tag">CSS3</span>
+        <span class="tag">JavaScript ES6+</span>
+        
+        <span class="tag">SQL</span><span class="tag">GitHub</span>
+        <span class="tag">Figma</span><span class="tag">VS Code</span>
+        <span class="tag">Content Optimization</span><span class="tag">URL Optimization</span>
+        <span class="tag">Internal Linking</span><span class="tag">Indexing Monitoring</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEO CASE STUDIES ============ -->
+<section class="section" id="casestudies">
+  <div class="container">
+    <div class="section-label">03 / Case Studies</div>
+    <h2 class="section-title">SEO Case Studies</h2>
+    <div class="case-grid">
+
+      <div class="case-card reveal">
+        <div class="case-icon"><i class="fas fa-search"></i></div>
+        <h3>Keyword Research</h3>
+        <p>Identified high-traffic, low-competition keywords for a travel website. Mapped keywords to relevant destination and blog pages using keyword clusters.</p>
+        <div class="case-tools"><span>Google Search Console</span><span>Google Analytics</span></div>
+        <div class="case-result"><i class="fas fa-arrow-trend-up"></i> Improved organic keyword visibility by targeting long-tail queries</div>
+      </div>
+
+      <div class="case-card reveal">
+        <div class="case-icon"><i class="fas fa-file-code"></i></div>
+        <h3>Meta Optimization</h3>
+        <p>Rewrote meta titles and descriptions across 50+ pages for a travel site. Ensured keyword-rich, click-worthy tags within character limits.</p>
+        <div class="case-tools"><span>Search Console</span><span>Manual Auditing</span></div>
+        <div class="case-result"><i class="fas fa-arrow-trend-up"></i> CTR improvements noted on priority pages within 4 weeks</div>
+      </div>
+
+      <div class="case-card reveal">
+        <div class="case-icon"><i class="fas fa-link"></i></div>
+        <h3>Internal Linking</h3>
+        <p>Audited and restructured internal link architecture for a corporate website. Connected related pages to distribute link equity and improve crawlability.</p>
+        <div class="case-tools"><span>Screaming Frog</span><span>Manual Review</span></div>
+        <div class="case-result"><i class="fas fa-arrow-trend-up"></i> Reduced orphan pages and improved crawl depth</div>
+      </div>
+
+      <div class="case-card reveal">
+        <div class="case-icon"><i class="fas fa-robot"></i></div>
+        <h3>Indexing Monitoring</h3>
+        <p>Used Google Search Console to identify and resolve indexing issues on newly published pages. Submitted XML sitemaps and monitored coverage reports.</p>
+        <div class="case-tools"><span>Google Search Console</span><span>robots.txt</span></div>
+        <div class="case-result"><i class="fas fa-arrow-trend-up"></i> Resolved coverage errors for 30+ pages successfully</div>
+      </div>
+
+      <div class="case-card reveal">
+        <div class="case-icon"><i class="fas fa-users-viewfinder"></i></div>
+        <h3>Competitor Analysis</h3>
+        <p>Analyzed top-ranking competitor sites for keyword gaps, backlink profiles, and content strategies. Provided actionable insights to bridge ranking gaps.</p>
+        <div class="case-tools"><span>Google Analytics</span><span>Manual Analysis</span></div>
+        <div class="case-result"><i class="fas fa-arrow-trend-up"></i> Identified 15+ new keyword opportunities from gap analysis</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE SEO TOOLKIT ============ -->
+<section class="section section-dark" id="toolkit">
+  <div class="container">
+    <div class="section-label">04 / Toolkit</div>
+    <h2 class="section-title">Interactive SEO Toolkit</h2>
+    <p class="section-sub">Real tools you can use right here — built with JavaScript.</p>
+
+    <div class="toolkit-tabs">
+      <button class="tab-btn active" data-tab="meta-title">Meta Title</button>
+      <button class="tab-btn" data-tab="meta-desc">Meta Description</button>
+      <button class="tab-btn" data-tab="keyword">Keyword Density</button>
+    </div>
+
+    <div class="toolkit-panel active" id="meta-title">
+      <label>Enter your Meta Title</label>
+      <input type="text" id="metaTitleInput" placeholder="e.g. Best SEO Analyst in Coimbatore | Herena" maxlength="100"/>
+      <div class="toolkit-result" id="metaTitleResult"></div>
+      <div class="serp-preview" id="titleSerpPreview">
+        <div class="serp-url">https://herena004.github.io ›</div>
+        <div class="serp-title" id="serpTitleText">Your title will appear here</div>
+        <div class="serp-desc">Click Generate Preview after typing your title.</div>
+      </div>
+    </div>
+
+    <div class="toolkit-panel" id="meta-desc">
+      <label>Enter your Meta Description</label>
+      <textarea id="metaDescInput" placeholder="e.g. Herena is a results-driven SEO Analyst with 9 months experience in on-page SEO, keyword research, and content optimization." maxlength="250" rows="4"></textarea>
+      <div class="toolkit-result" id="metaDescResult"></div>
+      <div class="serp-preview" id="descSerpPreview">
+        <div class="serp-url">https://herena004.github.io ›</div>
+        <div class="serp-title">Herena Konecia – SEO Analyst</div>
+        <div class="serp-desc" id="serpDescText">Your description will appear here...</div>
+      </div>
+    </div>
+
+    <div class="toolkit-panel" id="keyword">
+      <label>Enter your content</label>
+      <textarea id="keywordContent" placeholder="Paste your page content here..." rows="5"></textarea>
+      <label style="margin-top:1rem;">Target keyword</label>
+      <input type="text" id="keywordTarget" placeholder="e.g. SEO Analyst"/>
+      <button class="btn btn-primary" id="calcDensity" style="margin-top:1rem;"><i class="fas fa-calculator"></i> Calculate Density</button>
+      <div class="toolkit-result" id="keywordResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-label">05 / Projects</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-img project-img-1">
+          <div class="project-overlay">
+            <a href="https://herena004.github.io" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Herena004" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>To-Do List Application</h3>
+          <p>Interactive task management app with creation, editing, completion tracking, and deletion.</p>
+          <div class="project-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img project-img-2">
+          <div class="project-overlay">
+            <a href="https://herena004.github.io" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Herena004" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>E-Commerce Web Application</h3>
+          <p>Responsive e-commerce interface with product listing, shopping cart, and interactive UI components.</p>
+          <div class="project-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img project-img-3">
+          <div class="project-overlay">
+            <a href="https://herena004.github.io" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Herena004" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>AI-Based College Management</h3>
+          <p>AI-powered college administrative system with analytics dashboard and role-based access control.</p>
+          <div class="project-stack"><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img project-img-4">
+          <div class="project-overlay">
+            <a href="https://herena004.github.io" target="_blank" class="btn btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Herena004" target="_blank" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive portfolio with modern UI, mobile-friendly layout, showcasing skills and projects.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-dark" id="experience">
+  <div class="container">
+    <div class="section-label">06 / Experience</div>
+    <h2 class="section-title">Experience Timeline</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jun 2025 – Sep 2025</div>
+        <div class="timeline-card">
+          <div class="timeline-badge">Internship</div>
+          <h3>Junior SEO Analyst – QuantumQLabs</h3>
+          <ul>
+            <li>Assisted in keyword research, competitor analysis, and SEO reporting</li>
+            <li>Supported on-page optimization: meta titles, descriptions, URL structure</li>
+            <li>Monitored website performance and indexing via Google Search Console</li>
+            <li>Contributed to improving website navigation and content structure</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Sep 2025 – Feb 2026</div>
+        <div class="timeline-card">
+          <div class="timeline-badge timeline-badge-full">Full-Time</div>
+          <h3>Junior SEO Analyst – QuantumQLabs</h3>
+          <ul>
+            <li>Worked on SEO optimization for a travel website with destination pages and blogs</li>
+            <li>Performed keyword research & on-page SEO: meta tags, headings, internal linking</li>
+            <li>Improved search visibility via SEO-friendly layouts and responsive design</li>
+            <li>Conducted competitor analysis and monitored via Search Console & Analytics</li>
+            <li>Technical SEO: indexing monitoring, URL optimization, page performance analysis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot timeline-dot-pulse"></div>
+        <div class="timeline-date">2026 – Present</div>
+        <div class="timeline-card timeline-card-active">
+          <div class="timeline-badge timeline-badge-open">Open to Work</div>
+          <h3>Looking for New Opportunities</h3>
+          <p>Actively seeking SEO Analyst or Frontend Developer roles. Open to relocate. Let's connect!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="section-label">07 / Certifications</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-logo cert-oracle"><i class="fas fa-cloud"></i></div>
+        <div class="cert-body">
+          <h3>Oracle OCI AI Foundations</h3>
+          <p>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</p>
+          <span class="cert-issuer">Oracle University</span>
+        </div>
+        <a href="#" class="btn btn-sm cert-btn"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-logo cert-infosys"><i class="fas fa-infinity"></i></div>
+        <div class="cert-body">
+          <h3>CI/CD & DevOps</h3>
+          <p>Continuous Integration & Delivery (DevOps)</p>
+          <span class="cert-issuer">Infosys Springboard</span>
+        </div>
+        <a href="#" class="btn btn-sm cert-btn"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-logo cert-ms"><i class="fab fa-microsoft"></i></div>
+        <div class="cert-body">
+          <h3>Communication & Critical Thinking</h3>
+          <p>Communication Skills: Critical Thinking</p>
+          <span class="cert-issuer">NaanMudhalvan × Microsoft</span>
+        </div>
+        <a href="#" class="btn btn-sm cert-btn"><i class="fas fa-certificate"></i> View Certificate</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS SHOWCASE ============ -->
+<section class="section section-dark" id="tools">
+  <div class="container">
+    <div class="section-label">08 / Tools</div>
+    <h2 class="section-title">Tools I Use</h2>
+    <div class="tools-grid">
+      <div class="tool-item reveal">
+        <div class="tool-icon tool-ga"><i class="fas fa-chart-bar"></i></div>
+        <span>Google Analytics</span>
+      </div>
+      <div class="tool-item reveal">
+        <div class="tool-icon tool-gsc"><i class="fas fa-search"></i></div>
+        <span>Search Console</span>
+      </div>
+      <div class="tool-item reveal">
+        <div class="tool-icon tool-github"><i class="fab fa-github"></i></div>
+        <span>GitHub</span>
+      </div>
+      <div class="tool-item reveal">
+        <div class="tool-icon tool-figma"><i class="fab fa-figma"></i></div>
+        <span>Figma</span>
+      </div>
+      <div class="tool-item reveal">
+        <div class="tool-icon tool-vscode"><i class="fas fa-code"></i></div>
+        <span>VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-label">09 / Contact</div>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-sub">I'm actively seeking new opportunities. Whether you have a question or just want to say hi — my inbox is open!</p>
+
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <a href="mailto:herenakonecia@gmail.com" class="contact-link">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div><strong>Email</strong><br/>herenakonecia@gmail.com</div>
         </a>
-        <a href="https://github.com/Herena004" target="_blank" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          GitHub
+        <a href="tel:+918148995101" class="contact-link">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div><strong>Phone</strong><br/>+91 8148995101</div>
         </a>
-        <a href="mailto:herenakonecia@email.com" class="social-link">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email
+        <div class="contact-link">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><strong>Location</strong><br/>Tirupur, Tamil Nadu</div>
+        </div>
+        <a href="https://linkedin.com/in/herena-konecia" target="_blank" class="contact-link">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div><strong>LinkedIn</strong><br/>herena-konecia</div>
+        </a>
+        <a href="https://github.com/Herena004" target="_blank" class="contact-link">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div><strong>GitHub</strong><br/>Herena004</div>
         </a>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">01</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text reveal-up">
-          <p>Results-oriented Computer Science & Engineering graduate with hands-on experience as a <strong>Junior SEO Analyst</strong> and a strong foundation in <strong>front-end web development</strong> and UI design.</p>
-          <p>Proficient in HTML, CSS, JavaScript, Python, and Figma, with practical experience building responsive web applications and user interfaces.</p>
-          <p>I thrive at the intersection of <em>design thinking</em> and <em>technical execution</em> — crafting digital experiences that are both visually compelling and search-engine optimized.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="formName">Your Name</label>
+          <input type="text" id="formName" placeholder="Jane Smith" autocomplete="off"/>
+          <span class="form-error" id="nameError"></span>
         </div>
-        <div class="about-stats reveal-up">
-          <div class="stat-card">
-            <div class="stat-num" data-target="5">0</div>
-            <div class="stat-label">Months Experience</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num" data-target="4">0</div>
-            <div class="stat-label">Projects Built</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num" data-target="7">0</div>
-            <div class="stat-label">Tech Skills</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num" data-target="753" data-suffix="/10">0</div>
-            <div class="stat-label">CGPA Score</div>
-          </div>
+        <div class="form-group">
+          <label for="formEmail">Email Address</label>
+          <input type="email" id="formEmail" placeholder="jane@company.com" autocomplete="off"/>
+          <span class="form-error" id="emailError"></span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">02</span>
-        <h2 class="section-title">Technical Skills</h2>
-      </div>
-      <div class="skills-wrapper">
-        <div class="skill-category reveal-up">
-          <h3 class="skill-cat-title">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            Front-End Development
-          </h3>
-          <div class="skill-pills">
-            <span class="pill">HTML5</span>
-            <span class="pill">CSS3</span>
-            <span class="pill">JavaScript ES6+</span>
-            
-          </div>
+        <div class="form-group">
+          <label for="formSubject">Subject</label>
+          <input type="text" id="formSubject" placeholder="Job Opportunity / Collaboration" autocomplete="off"/>
+          <span class="form-error" id="subjectError"></span>
         </div>
-        <div class="skill-category reveal-up">
-          <h3 class="skill-cat-title">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            UI / Design
-          </h3>
-          <div class="skill-pills">
-            <span class="pill">Figma</span>
-            <span class="pill">Responsive Design</span>
-            <span class="pill">UI/UX Principles</span>
-            <span class="pill">Mobile-First</span>
-          </div>
+        <div class="form-group">
+          <label for="formMessage">Message</label>
+          <textarea id="formMessage" rows="5" placeholder="Tell me about the opportunity..."></textarea>
+          <span class="form-error" id="messageError"></span>
         </div>
-        <div class="skill-category reveal-up">
-          <h3 class="skill-cat-title">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-            SEO & Analytics
-          </h3>
-          <div class="skill-pills">
-            <span class="pill">Keyword Research</span>
-            <span class="pill">On-Page SEO</span>
-            <span class="pill">Technical SEO</span>
-            <span class="pill">Google Analytics</span>
-            <span class="pill">Search Console</span>
-            <span class="pill">Backlink Research</span>
-          </div>
-        </div>
-        <div class="skill-category reveal-up">
-          <h3 class="skill-cat-title">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42a2 2 0 0 1 1.98-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.24-1.24a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Tools & Languages
-          </h3>
-          <div class="skill-pills">
-            <span class="pill">Python</span>
-            <span class="pill">Git</span>
-            <span class="pill">GitHub</span>
-            <span class="pill">VS Code</span>
-            
-            <span class="pill">SQL</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skill Bars -->
-      <div class="skill-bars reveal-up">
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span>HTML / CSS</span><span class="skill-pct">90%</span>
-          </div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span>JavaScript</span><span class="skill-pct">78%</span>
-          </div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span>SEO & Analytics</span><span class="skill-pct">85%</span>
-          </div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span>Figma / UI Design</span><span class="skill-pct">75%</span>
-          </div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header">
-            <span>Python</span><span class="skill-pct">65%</span>
-          </div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">03</span>
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item reveal-up">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-            <div class="marker-line"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-badge">Full-Time</span>
-              <span class="timeline-date">Sep 2025 – Feb 2026</span>
-            </div>
-            <h3 class="timeline-role">Junior SEO Analyst</h3>
-            <span class="timeline-company">QuantumQLabs</span>
-            <ul class="timeline-points">
-              <li>Executed keyword research, on-page optimization, meta tag implementation, and technical SEO analysis.</li>
-              <li>Supported SEO strategies to enhance website visibility, improve organic rankings, and drive traffic growth.</li>
-              <li>Monitored website performance using SEO and analytics tools; prepared performance reports with actionable insights.</li>
-              <li>Conducted competitor analysis and backlink research to identify growth opportunities.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal-up">
-          <div class="timeline-marker">
-            <div class="marker-dot"></div>
-            <div class="marker-line"></div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-meta">
-              <span class="timeline-badge intern">Internship</span>
-              <span class="timeline-date">Jun 2025 – Sep 2025</span>
-            </div>
-            <h3 class="timeline-role">Junior SEO Analyst</h3>
-            <span class="timeline-company">QuantumQLabs</span>
-            <ul class="timeline-points">
-              <li>Executed SEO activities including keyword research, on-page optimization, and technical SEO audits.</li>
-              <li>Tracked and analyzed website performance using Google Analytics and Google Search Console.</li>
-              <li>Demonstrated analytical thinking and eagerness to learn modern SEO techniques.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">04</span>
-        <h2 class="section-title">Projects</h2>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card featured reveal-up">
-          <div class="project-card-inner">
-            <div class="project-num">01</div>
-            <div class="project-tech-row">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-               <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">React.js</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express.js</span>
-              <span class="tech-tag">MongoDB</span>
-            </div>
-            <h3 class="project-title">AI-Based College Administrative Services(Final Year project)</h3>
-            <p class="project-desc">A full-stack web application automating college administrative workflows including student management, attendance tracking, leave approvals, and document management.</p>
-            <ul class="project-highlights">
-              <li>Interactive dashboard with real-time analytics</li>
-              <li>Performance Prediction module for academic insights</li>
-              <li>Role-Based Access Control (RBAC) security system</li>
-            </ul>
-            <div class="project-footer">
-              <span class="project-type">Full-Stack Application</span>
-              <a href="#" class="project-link" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal-up">
-          <div class="project-card-inner">
-            <div class="project-num">02</div>
-            <div class="project-tech-row">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <h3 class="project-title">Personal Portfolio Website</h3>
-            <p class="project-desc">A fully responsive personal portfolio showcasing projects, skills, and professional background with smooth scroll animations and mobile-first design.</p>
-            <div class="project-footer">
-              <span class="project-type">Front-End</span>
-              <a href="#" class="project-link" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal-up">
-          <div class="project-card-inner">
-            <div class="project-num">03</div>
-            <div class="project-tech-row">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <h3 class="project-title">E-Commerce Web Application</h3>
-            <p class="project-desc">A front-end e-commerce interface featuring product listings, a shopping cart, and checkout flow with consistent cross-device responsive design.</p>
-            <div class="project-footer">
-              <span class="project-type">Front-End</span>
-              <a href="#" class="project-link" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card reveal-up">
-          <div class="project-card-inner">
-            <div class="project-num">04</div>
-            <div class="project-tech-row">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <h3 class="project-title">To-Do List Application</h3>
-            <p class="project-desc">An interactive task management app with features for adding, editing, completing, and deleting tasks using JavaScript DOM manipulation for local state management.</p>
-            <div class="project-footer">
-              <span class="project-type">JavaScript App</span>
-              <a href="#" class="project-link" aria-label="View project">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section class="section education" id="education">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">05</span>
-        <h2 class="section-title">Education</h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal-up">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          <div class="edu-content">
-            <span class="edu-degree">Bachelor of Engineering</span>
-            <h3 class="edu-major">Computer Science & Engineering</h3>
-            <span class="edu-inst">Angel College of Engineering and Technology</span>
-            <div class="edu-meta">
-              <span class="edu-year">Graduated 2026</span>
-              <span class="edu-cgpa">CGPA: 7.53 / 10</span>
-            </div>
-          </div>
-        </div>
-        <div class="edu-card reveal-up">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div class="edu-content">
-            <span class="edu-degree">Secondary School</span>
-            <h3 class="edu-major">Higher Secondary Education</h3>
-            <span class="edu-inst">Government Girls Higher Secondary School — Avinashi</span>
-            <div class="edu-meta">
-              <span class="edu-year">2020 – 2022</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Languages -->
-      <div class="languages-block reveal-up">
-        <h3 class="lang-title">Languages</h3>
-        <div class="lang-pills">
-          <div class="lang-item">
-            <div class="lang-flag">EN</div>
-            <div class="lang-info">
-              <span class="lang-name">English</span>
-              <span class="lang-level">Professional Proficiency</span>
-            </div>
-          </div>
-          <div class="lang-item">
-            <div class="lang-flag">தமிழ்</div>
-            <div class="lang-info">
-              <span class="lang-name">Tamil</span>
-              <span class="lang-level">Native</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header reveal-up">
-        <span class="section-num">06</span>
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <div class="contact-wrapper reveal-up">
-        <div class="contact-left">
-          <p class="contact-intro">Looking for a Web Developer or SEO Analyst who brings both technical depth and creative vision? Let's connect!</p>
-          <div class="contact-items">
-            <a href="https://in.linkedin.com/in/herena-konecia-1a4aa3331" target="_blank" class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div class="ci-text">
-                <span class="ci-label">LinkedIn</span>
-                <span class="ci-value">linkedin.com/in/herena-konecia-1a4aa3331</span>
-              </div>
-              <svg class="ci-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            
-          
-
-          
-
-            <a href="https://github.com/Herena004" target="_blank" class="contact-item">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              </div>
-              <div class="ci-text">
-                <span class="ci-label">GitHub</span>
-                <span class="ci-value">github.com/Herena004</span>
-              </div>
-              <svg class="ci-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <div class="contact-item no-link">
-              <div class="ci-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div class="ci-text">
-                <span class="ci-label">Location</span>
-                <span class="ci-value">Tirupur, Tamil Nadu, India</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact-right">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="john@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Hi Herena, I'd love to discuss..." required></textarea>
-            </div>
-            <button type="submit" class="btn-primary full-width" id="submitBtn">
-              <span>Send Message</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">HK<span class="dot">.</span></div>
-        <p class="footer-copy">© 2026 Herena Konecia. Crafted with passion.</p>
-        <button class="back-to-top" id="backToTop" aria-label="Back to top">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        <button type="submit" class="btn btn-primary" id="formSubmit">
+          <i class="fas fa-paper-plane"></i> Send Message
         </button>
-      </div>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+        </div>
+      </form>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Designed & Built by <strong>Herena Konecia</strong></span>
+    <span class="footer-dot">·</span>
+    <span>SEO Analyst & Frontend Developer</span>
+    <span class="footer-dot">·</span>
+    <a href="mailto:herenakonecia@gmail.com">herenakonecia@gmail.com</a>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
 <script src="script.js"></script>
 </body>
 </html>
